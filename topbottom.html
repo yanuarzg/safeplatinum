@@ -1,6 +1,100 @@
 <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
 <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet'/>
 
+
+					<!-- addson widget home -->
+<style>
+.panel-primary {
+    border-color: transparent;
+}
+.panel-body {
+    padding: 2rem;
+}
+.panel {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    height: 3rem;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    height: 3rem;
+}
+.input-group {
+    height: 3rem;
+}
+.btn-group-sm>.btn, .btn-sm {
+    height: 3rem;
+    padding: 5px 2rem;
+}
+.nb-yzg {
+    font-size:smaller;
+    float:left;
+    color: #aaa;
+    margin: -5px 0 0px;
+    font-style: italic;
+}
+@media only screen and (max-width:600px){
+.panel-body {
+    padding: 1.5rem;
+}}
+</style>
+<div class='panel panel-primary primary-color-border'>
+<div class='panel-body'>
+<div class='form-group'>
+<div class='input-group'>
+<span class='input-group-addon'>
+<i class='fa fa-link'>
+</i>
+</span>
+<input class='form-control' id='generateurl' placeholder='Put your link here' type='url'/>
+<span class='input-group-btn'>
+<button class='btn btn-primary primary-color primary-color-border' id='btngenerate' type='button'>
+<i class='fa fa-shield'>
+</i>
+<strong>Submit</strong>
+</button>
+</span>
+</div>
+</div>
+<span class="nb-yzg">
+  *http:// or https:// is required</span><p><br/></p>
+<div class='hidden text-center' id='generateloading'><i class='fa fa-spinner fa-spin'></i></div>
+<div class='hidden' id='generatelink'>
+<div class='form-group has-success'>
+<div class='input-group'>
+<span class='input-group-addon'>
+<strong>Result:</strong>
+<i aria-hidden='true' class='fa fa-check'>
+</i>
+</span>
+<input class='form-control' id='resulturl' onclick='this.focus();this.select()' readonly='readonly' type='text'/>
+</div>
+<br/>
+<div class='text-center'>
+<button class='copytoclipboard btn-sm btn btn-success' data-clipboard-action='copy' data-clipboard-target='#resulturl' id='copytoclipboard'><span class='fa fa-floppy-o'></span> Copy URL</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+					<!-- addson post atas -->
+<div id="timer"></div>
+<div class="text-center">
+<button id='getlink' class='btn bt-success hidden' disabled=''>Get Link</button>
+<!-- iklan -->
+</div>
+					<!-- addson post bawah -->
+<div class="text-center">
+<button id='gotolink' class='btn bt-success hidden' disabled=''>Go to Link</button>
+<div style='margin:auto;display:inline-block'>
+<!-- iklan -->
+</div>
+</div>
+
+
 <div class='adb hidden' id='adb'>
 <div class='adbs' id='adbs'></div>
 </div>
