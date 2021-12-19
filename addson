@@ -87,5 +87,13 @@ $(document).ready(function(){$("#btngenerate").on("click",function(){var e=$("#g
 var setting={exceptionurl:"catatandroid.com,blog.dimensidata.com",path:"#?o="};
 //]]>
   </script>
+<script async='async' src='https://cdn.statically.io/gh/yanuarzg/safeplatinum/master/utama.min.js' type='text/javascript'/>
+<script async='async' src='https://www.blogger.com/feeds/1594874614042708814/posts/default?alt=json-in-script&amp;max-results=150&amp;callback=showurl' type='text/javascript'/>
+
+<script async='async' type='text/javascript'>
+//<![CDATA[
+var setting={exceptionurl:"catatandroid.com,blog.dimensidata.com",path:"#?o="};
+//]]>
+  </script>
 <script async='async' src='https://cdn.statically.io/gh/dulbjn/javascript/10b6b23f/safeplatinum.js' type='text/javascript'/>
 <script async='async' src='https://www.blogger.com/feeds/1594874614042708814/posts/default?alt=json-in-script&amp;max-results=150&amp;callback=showurl' type='text/javascript'/>
